@@ -21,18 +21,17 @@ body {
 
 .header-list {
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
-    margin-left: 24px;
     align-items: center;
-}
-
-.header-list-content {
+    justify-content: space-between;
     margin-left: 24px;
-    padding: 4px;
+    
 }
 
-
+.header-links {
+    padding: 20px;
+}
 
 /* page-container */
 .page-container {
@@ -41,9 +40,7 @@ body {
     padding-left: 15%;
     padding-right: 15%;
 }
-.header {
-    border: 1px solid red;
-}
+
 
 .main-content {
     margin-bottom: 1.25rem;
@@ -54,7 +51,8 @@ h1, h2, h4, p, ul, ol, a{
 }
 img {
     height: auto;
-    width: 500px;
+    max-width: 80%;
+    /* width: 500px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
