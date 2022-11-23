@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 15%;
 }
 
 #page-header-logo {
@@ -21,38 +21,41 @@ body {
 
 .header-list {
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 24px;
-    
+    margin-left: 30px;
+    text-size-adjust: 100%;
 }
 
 .header-links {
-    padding: 20px;
+    margin-left: 20px;
+    /* padding: 20px; */
+}
+
+.header-button {
+    height: auto;
+    width: 40px;
+    border: none;
+    background: none;
+    visibility: hidden;
 }
 
 /* page-container */
 .page-container {
     margin: 10px;
     border: 5px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 0 15%;
 }
 
-
-.main-content {
-    margin-bottom: 1.25rem;
-}
 h1, h2, h4, p, ul, ol, a{
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
 
 }
 img {
     height: auto;
-    max-width: 80%;
-    /* width: 500px; */
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -66,4 +69,27 @@ a {
 
 a:hover {
     color: gray;
+}
+
+.header-links:hover {
+    border-bottom: 1px solid gray;
+}
+
+/* For small display */
+
+@media (max-width: 699px) {
+    .page-header-in{
+        padding: 0 5%;
+    }
+    .header-links {
+        visibility: hidden;
+    }
+    .header-button {
+        margin-right: 20px;
+        order: 1;
+        visibility: visible;
+    }
+    .page-container {
+        padding: 0 5%;
+    }
 }
