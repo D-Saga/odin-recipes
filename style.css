@@ -4,14 +4,14 @@ body {
 /* page header */
 .page-header-out {
     box-sizing: border-box;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgrey;
 }
 
 .page-header-in{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15%;
+    padding: 0 20%;
 }
 
 #page-header-logo {
@@ -46,7 +46,8 @@ body {
 .page-container {
     margin: 10px;
     border: 5px;
-    padding: 0 15%;
+    padding: 0 20%;
+    
 }
 
 h1, h2, h4, p, ul, ol, a{
